@@ -26,21 +26,21 @@ module.exports = {
       {
         test: /\.m?js$/,
         exclude: /(node_modules|bower_components)/,
-        use: ['babel-loader', 'eslint-loader']
+        use: ['babel-loader', 'eslint-loader'],
       },
       {
         test: /\.scss$/,
         use: [
           MiniCssExtractPlugin.loader,
-     'css-loader', 'sass-loader'], 
-    }
-    ]
+          'css-loader', 'sass-loader'],
+      },
+    ],
   },
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),
   },
   plugins: [
-    new MiniCssExtractPlugin({filename: '[name].[contenthash].css'}),
+    new MiniCssExtractPlugin({ filename: '[name].[contenthash].css' }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'index.html'),

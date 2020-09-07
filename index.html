@@ -1,20 +1,33 @@
+  
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Webpack starter</title>
-</head>
-<body>
-  <main>
-    <h4>TODO</h4>
-<div class="list">
-    <ul>
-      <li>Handle your SCSS</li>
-      <li>Extract your styles into one file</li>
-      <li>Add eslint to project</li>
-    </ul>
-  </div>
-  </main>
-</body>
+<html>
+  <head>
+    <title>To do app</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="todo-app">
+      <header id="header">
+        <h1 id="header-text">To do app</h1>
+      </header>
+      <form action="submit" id="todo-form">
+        <label for="todo-input"></label>
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="Enter the task"
+          required
+        />
+        <button type="submit" id="todosubmit">
+          <span class="todo-button-span">Submit</span>
+        </button>
+      </form>
+      <ul id="todo-list">
+      </ul>
+      <button type="submit" id="todo-delete-all">
+        <span class="clear-all">Clear all</span>
+      </button>
+    </div>
+  </body>
 </html>
